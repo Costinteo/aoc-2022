@@ -22,6 +22,7 @@ download_input() {
 	done
 }
 
+[ ! -d $RES_DIR ] && mkdir res
 [ "$1" == "clean" ] && rm $RES_DIR/input*
 
 download_input
